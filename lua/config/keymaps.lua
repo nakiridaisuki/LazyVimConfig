@@ -6,7 +6,10 @@ vim.keymap.del("n", "<C-/>")
 vim.keymap.del("t", "<C-/>")
 
 local lazyterm = function()
-  Snacks.terminal(nil, { cwd = LazyVim.root() })
+  -- Open terminal in cwd
+  Snacks.terminal()
+  -- Open terminal in project root
+  -- Snacks.terminal(nil, { cwd = LazyVim.root() })
 end
-vim.keymap.set("n", "<C-/>", lazyterm, { desc = "Terminal (Root Dir)" })
+vim.keymap.set("n", "<C-/>", lazyterm, { desc = "Terminal (cwd)" })
 vim.keymap.set("t", "<C-/>", "<cmd>close<cr>", { desc = "Hide Terminal" })
