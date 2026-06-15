@@ -13,8 +13,3 @@ local lazyterm = function()
 end
 vim.keymap.set("n", "<C-/>", lazyterm, { desc = "Terminal (cwd)" })
 vim.keymap.set("t", "<C-/>", "<cmd>close<cr>", { desc = "Hide Terminal" })
-
-local avante_toggle = function()
-  require("avante.api").toggle()
-end
-vim.keymap.set("n", "<C-\\>", avante_toggle, { desc = "Avante: Toggle Chat Sidebar" })
