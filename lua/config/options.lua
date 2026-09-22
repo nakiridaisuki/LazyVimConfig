@@ -7,9 +7,11 @@
 vim.filetype.add({
   extension = {
     v = "verilog",
+    S = "asm",
   },
 })
 
 local opt = vim.opt
 
 opt.mouse = ""
+opt.wrap = true
