@@ -4,6 +4,7 @@ return {
   opts = {
     backend = "kitty",
     processor = "magick_cli",
-    intergrations = {},
+    integrations = {},
+    hijack_file_patterns = { "*.png", "*.jpg", "*.jpeg", "*.gif", "*.webp", "*.svg" },
   },
 }
